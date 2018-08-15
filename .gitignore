@@ -3,3 +3,5 @@ CMakeFiles
 CTestTestfile.cmake
 cmake_install.cmake
 Makefile
+libfc.a
+test/crypto/test_deveos_cypher_suite
