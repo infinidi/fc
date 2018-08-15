@@ -1,4 +1,4 @@
-#define BOOST_TEST_MODULE test_fakeos_cypher_module
+#define BOOST_TEST_MODULE test_deveos_cypher_module
 #include <boost/test/unit_test.hpp>
 
 #include <fc/crypto/public_key.hpp>
@@ -13,7 +13,7 @@
 using namespace fc::crypto;
 using namespace fc;
 
-BOOST_AUTO_TEST_SUITE(test_fakeos_cypher_suite)
+BOOST_AUTO_TEST_SUITE(test_deveos_cypher_suite)
 
 #define testName test_read_PUB_R1_key
 BOOST_AUTO_TEST_CASE(testName) try {
@@ -23,7 +23,6 @@ BOOST_AUTO_TEST_CASE(testName) try {
 
   LOG(testName, "private_key_shim = " << std::string(private_key_shim));
 
-  //   BOOST_CHECK_EQUAL(std::string(pub), std::string(recycled_pub));
   LOG(testName, "FINISH")
 } FC_LOG_AND_RETHROW();
 
